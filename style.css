@@ -1,78 +1,83 @@
-body{
-    font-family: 'Roboto', sans-serif;
+body {
+  font-family: "Roboto", sans-serif;
 }
-.titles{
-    color: gray;
-    font-weight:normal;
+.titles {
+  color: gray;
+  font-weight: normal;
 }
-#left-wrapper{
-    width: 30%;
-    height: 100%;
-   /* border: 3px solid firebrick;*/
-    float: left;
-    background-color: #EEECEC;
-    
+#left-wrapper {
+  width: 30%;
+  height: 100%;
+  /* border: 3px solid firebrick;*/
+  float: left;
+  background-color: #eeecec;
 }
-#right-wrapper{
-    width: 65%;
-    height: 100%;
-    /*border: 3px solid firebrick;*/
-    margin: auto;
-    float: right;
+#right-wrapper {
+  width: 65%;
+  height: 100%;
+  /*border: 3px solid firebrick;*/
+  margin: auto;
+  float: right;
 }
-.about-content{
-    margin-top: 120px;
+.about-content {
+  margin-top: 120px;
 }
-.profile-photo-content{
-    margin-top: 120px;
-    margin-left: 80px;
-    margin-right: 40px;
-    height: 365px;
+.profile-photo-content {
+  margin-top: 120px;
+  margin-left: 80px;
+  margin-right: 40px;
+  height: 365px;
 }
-.ri{
-    margin-top: 60px;
-    padding-bottom: 30px;
-    padding-right: 10px;
-    /*border: 3px solid firebrick;*/
+.ri {
+  margin-top: 60px;
+  padding-bottom: 30px;
+  padding-right: 10px;
+  /*border: 3px solid firebrick;*/
 }
-.le{
-    margin-top: 60px;
-    padding-bottom: 150px;
-    padding-left: 180px;
-   /* border: 3px solid firebrick;*/
+.le {
+  margin-top: 60px;
+  padding-bottom: 150px;
+  padding-left: 180px;
+  /* border: 3px solid firebrick;*/
 }
-#last-name{
-    text-transform: uppercase;
-    color:#FFC300;
+#last-name {
+  text-transform: uppercase;
+  color: #ffc300;
 }
-#profile-photo{
-    display: inline-block;
-    width: 250px;
-    height: 250px;
-    border-radius: 50%;
-    align-content: center;
+#profile-photo {
+  display: inline-block;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  align-content: center;
 }
-hr{
-    margin-top: 60px;
+hr {
+  margin-top: 60px;
 }
-#icons-content{
-   margin-top: 150px;
-   /*border: 3px solid firebrick;*/
-  /* width: 20%;*/
-   float: right;
-   margin-right: 90px;
-   height: 100px;
+#icons-content {
+  margin-top: 150px;
+  /*border: 3px solid firebrick;*/
+  float: right;
+  margin-right: 90px;
+  height: 100px;
 }
-.icons{
-    color:gray;
-     width:30px; 
-     height:30px;
+.icons {
+  color: gray;
+  width: 30px;
+  height: 30px;
 }
 .grid-container {
-    display: grid;
-    grid-template-columns: repeat(4, 230px);
-  }
-h4,p {
-    color: gray;
-  }
-  
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+}
+h4,
+p {
+  color: gray;
+}
+.grid-container-exterpise {
+  display: grid;
+  grid-template-columns: repeat(2, 400px);
+}
+.grid-item-exterpise {
+  position: relative;
+}
