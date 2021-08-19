@@ -9,6 +9,7 @@
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <link rel="stylesheet" href="style.css" />
+    <script src="index.js" type="text/javascript"></script>
 </head>
 
 <body>
@@ -17,15 +18,17 @@
             <div class="profile-photo-content">
                 <img src="resources/photo.jpeg" id="profile-photo" />
             </div>
-            <div class=" le">
+            <div class="left-div-content">
                 <h4>INTRO</h4>
                 <p>What I am?</p>
             </div>
-            <div class="le">
+            <div class="left-div-content">
                 <h4>EXPERTISE</h4>
                 <p>Batman would be jealous.</p>
             </div>
-            <div class="le">
+            <div class="left-div-content skills">
+                <h4>SKILLS</h4>
+                <p>Progress bars, anyone?</p>
             </div>
         </div>
         <div id="right-wrapper">
@@ -64,8 +67,9 @@
                     </div>
                 </div>
             </div>
-            <div class=" ri">
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet
+            <div class="right-div-content">
+                <p id="intro-text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Phasellus hendrerit. Pellentesque aaliquet
                     nibh nec urna. In nisi neque, aliquet vel, dapibus id, mattis vel, nisi. Sed pretium, ligula
                     sollicitudin
                     laoreet viverra, tortor libero sodales leo, eget blandit nunc tortor eu nibh. Nullam mollis. Ut
@@ -78,11 +82,11 @@
                     Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis.
                 </p>
             </div>
-            <div class="ri">
+            <div class="right-div-content">
                 <div class="grid-container-exterpise">
                     <div class="grid-item-exterpise">
                         <div style="float: left;">
-                            <h4>01</h4>
+                            <h4 class="number-item">01</h4>
                         </div>
                         <div style="float: right; width: 360px;">
                             <h4>ADVANCED CSS</h4>
@@ -94,7 +98,7 @@
                     </div>
                     <div class="grid-item-exterpise">
                         <div style="float: left;">
-                            <h4>01</h4>
+                            <h4 class="number-item">02</h4>
                         </div>
                         <div style="float: right; width: 360px;">
                             <h4>ADVANCED CSS</h4>
@@ -106,7 +110,7 @@
                     </div>
                     <div class="grid-item-exterpise">
                         <div style="float: left;">
-                            <h4>01</h4>
+                            <h4 class="number-item">03</h4>
                         </div>
                         <div style="float: right; width: 360px;">
                             <h4>ADVANCED CSS</h4>
@@ -118,7 +122,31 @@
                     </div>
                     <div class="grid-item-exterpise">
                         <div style="float: left;">
-                            <h4>01</h4>
+                            <h4 class="number-item">04</h4>
+                        </div>
+                        <div style="float: right; width: 360px;">
+                            <h4>ADVANCED CSS</h4>
+                             <p>Cras ornare tristique elit lorem ipsum dolor sit 
+                            amet, consectetuer adipiscing elit. Phasellus 
+                            hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
+                             dapibus id.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item-exterpise">
+                        <div style="float: left;">
+                            <h4 class="number-item">05</h4>
+                        </div>
+                        <div style="float: right; width: 360px;">
+                            <h4>ADVANCED CSS</h4>
+                             <p>Cras ornare tristique elit lorem ipsum dolor sit 
+                            amet, consectetuer adipiscing elit. Phasellus 
+                            hendrerit. Pellentesque aliquet nibh nec urna. In nisi neque, aliquet vel,
+                             dapibus id.</p>
+                        </div>
+                    </div>
+                    <div class="grid-item-exterpise">
+                        <div style="float: left;">
+                            <h4 class="number-item">06</h4>
                         </div>
                         <div style="float: right; width: 360px;">
                             <h4>ADVANCED CSS</h4>
@@ -130,8 +158,73 @@
                     </div>
                 </div>
             </div>
-            <div class="ri">
-                desmond ramboski
+            <div class="right-div-content">
+                <div class="grid-container-exterpise">
+                    <div class="grid-item-exterpise" onclick="showModal('first')"">
+                        <div style="float: left;">
+                            <h4 class="number-item">80%</h4>
+                        </div>
+                        <div  style="float: right; width: 360px; align-content: center;">
+                            <h4>English</h4>
+                        </div>
+                        <progress class="progress-bar" max="100" value="70"> 70% </progress>
+                    </div>
+
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                          <span onclick="closeModal()" class="close">&times;</span>
+                          <p>Some text in the Modal..</p>
+                        </div>
+                      
+                      </div>
+                    <div class="grid-item-exterpise">
+                        <div style="float: left;">
+                            <h4 class="number-item">80%</h4>
+                        </div>
+                        <div  style="float: right; width: 360px; align-content: center;">
+                            <h4>English</h4>
+                        </div>
+                        <progress class="progress-bar" max="100" value="70"> 70% </progress>
+                    </div>
+                    <div class="grid-item-exterpise">
+                        <div style="float: left;">
+                            <h4 class="number-item">80%</h4>
+                        </div>
+                        <div  style="float: right; width: 360px; align-content: center;">
+                            <h4>English</h4>
+                        </div>
+                        <progress class="progress-bar" max="100" value="70"> 70% </progress>
+                    </div>
+                    <div class="grid-item-exterpise">
+                        <div style="float: left;">
+                            <h4 class="number-item">80%</h4>
+                        </div>
+                        <div  style="float: right; width: 360px; align-content: center;">
+                            <h4>English</h4>
+                        </div>
+                        <progress class="progress-bar" max="100" value="70"> 70% </progress>
+                    </div>
+                    <div class="grid-item-exterpise">
+                        <div style="float: left;">
+                            <h4 class="number-item">80%</h4>
+                        </div>
+                        <div  style="float: right; width: 360px; align-content: center;">
+                            <h4>English</h4>
+                        </div>
+                        <progress class="progress-bar" max="100" value="70"> 70% </progress>
+                    </div>
+                    <div class="grid-item-exterpise">
+                        <div style="float: left;">
+                            <h4 class="number-item">80%</h4>
+                        </div>
+                        <div  style="float: right; width: 360px; align-content: center;">
+                            <h4>English</h4>
+                        </div>
+                        <progress class="progress-bar" max="100" value="70"> 70% </progress>
+                    </div>
+                </div>
             </div>
 
         </div>

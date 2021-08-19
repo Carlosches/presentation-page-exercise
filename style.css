@@ -5,6 +5,9 @@ body {
   color: gray;
   font-weight: normal;
 }
+.number-item {
+  color: #ffc300;
+}
 #left-wrapper {
   width: 30%;
   height: 100%;
@@ -27,18 +30,22 @@ body {
   margin-left: 80px;
   margin-right: 40px;
   height: 365px;
+  align-items: right;
 }
-.ri {
+.right-div-content {
   margin-top: 60px;
   padding-bottom: 30px;
   padding-right: 10px;
   /*border: 3px solid firebrick;*/
 }
-.le {
-  margin-top: 60px;
+.left-div-content {
+  margin-top: 80px;
   padding-bottom: 150px;
   padding-left: 180px;
-  /* border: 3px solid firebrick;*/
+  /*border: 3px solid firebrick;*/
+}
+.skills {
+  margin-top: 320px;
 }
 #last-name {
   text-transform: uppercase;
@@ -53,6 +60,7 @@ body {
 }
 hr {
   margin-top: 60px;
+  margin-right: 80px;
 }
 #icons-content {
   margin-top: 150px;
@@ -80,4 +88,42 @@ p {
 }
 .grid-item-exterpise {
   position: relative;
+}
+progress {
+  -webkit-appearance: none;
+  overflow: hidden;
+  border-radius: 15px;
+  width: 300px;
+  height: 10px;
+}
+progress::-webkit-progress-bar {
+  background: #eeecec;
+}
+progress::-webkit-progress-value {
+  background: #ffc300;
+}
+#intro-text {
+  margin-right: 50px;
+}
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%;
 }
